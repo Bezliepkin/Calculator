@@ -1,1 +1,15 @@
-* 
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.calc-viev{
+.display{
+
+}
+.grid-table{
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(4, 25%);
+}
+}
