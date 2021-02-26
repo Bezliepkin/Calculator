@@ -4,12 +4,25 @@
 }
 
 .calc-viev{
-.display{
-
+    margin: 10px auto 0;
+    display: block;
+    width: 200px;
+    padding: 10px;
+    border: 1px solid;
+.display .text-viev{
+    width: 209px;
+    margin: 10px auto 10px;
 }
 .grid-table{
     display: grid;
     grid-gap: 5px;
-    grid-template-columns: repeat(4, 25%);
+    grid-template-columns: repeat(4, 25%);// Закончил писать код именно тут, видео на 6:47 минуте
+    grid-auto-rows: repeat(auto-fill, auto);
+
+    input {
+        width: 100%;
+        height: 47px;
+        font-size: 16px;
+    }
 }
 }
