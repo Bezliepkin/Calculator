@@ -6,79 +6,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    
 </head>
 
 <body>
-    <div class="calc-viev">
+    <div class="calc-view">
         <div class="display">
-            <form>
-                <input name="text-viev" class="text-viev" type="text">
+            <form name="form">
+                <input name="textView" class="text-view" type="text">
             </form>
         </div>
             <div class="grid-table">
+                <div class="element сlean">
+                    <input type="button" onclick="clean()" value="C">
+                </div>
+
+                <div class="element percent">
+                    <input type="button" onclick="insert('%')" value="%">
+                </div>
                 <div class="element">
-                    <input type="button" value="C">
+                    <input type="button" onclick="insert('*')" value="*">
+                </div>
+                <div class="element">
+                    <input type="button" onclick="insert('/')" value="/">
                 </div>
 
                 <div class="element">
-                    <input type="button" value="%">
+                    <input type="button" onclick="insert(7)" value="7">
                 </div>
                 <div class="element">
-                    <input type="button" value="^">
+                    <input type="button" onclick="insert(8)" value="8">
                 </div>
                 <div class="element">
-                    <input type="button" value="/">
+                    <input type="button" onclick="insert(9)" value="9">
+                </div>
+                <div class="element">
+                    <input type="button" onclick="insert('-')" value="-">
                 </div>
 
                 <div class="element">
-                    <input type="button" value="7">
+                    <input type="button" onclick="insert(4)" value="4">
                 </div>
                 <div class="element">
-                    <input type="button" value="8">
+                    <input type="button" onclick="insert(5)" value="5">
                 </div>
                 <div class="element">
-                    <input type="button" value="9">
+                    <input type="button" onclick="insert(6)" value="6">
                 </div>
                 <div class="element">
-                    <input type="button" value="*">
+                    <input type="button" onclick="insert('+')" value="+">
                 </div>
 
                 <div class="element">
-                    <input type="button" value="4">
+                    <input type="button" onclick="insert(1)" value="1">
                 </div>
                 <div class="element">
-                    <input type="button" value="5">
+                    <input type="button" onclick="insert(2)" value="2">
                 </div>
                 <div class="element">
-                    <input type="button" value="6">
+                    <input type="button" onclick="insert(3)" value="3">
                 </div>
-                <div class="element">
-                    <input type="button" value="-">
+                <div class="element equal">
+                    <input type="button" onclick="equal()" value="=">
                 </div>
 
-                <div class="element">
-                    <input type="button" value="1">
+                <div class="element zero">
+                    <input type="button" onclick="insert(0)" value="0">
                 </div>
                 <div class="element">
-                    <input type="button" value="2">
-                </div>
-                <div class="element">
-                    <input type="button" value="3">
-                </div>
-                <div class="element">
-                    <input type="button" value="+">
+                    <input type="button" onclick="insert('.')" value=".">
                 </div>
 
-                <div class="element">
-                    <input type="button" value="0">
-                </div>
-                <div class="element">
-                    <input type="button" value=".">
-                </div>
-// закончил на 14:52, разместил кнопки
                 </div>
             </div>
     </div>
 </body>
+<script src="./assets/js/script.js"></script>
 
 </html>

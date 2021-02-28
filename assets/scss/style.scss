@@ -3,13 +3,13 @@
     padding: 0;
 }
 
-.calc-viev{
+.calc-view{
     margin: 10px auto 0;
     display: block;
     width: 250px;
     padding: 10px;
     border: 1px solid;
-.display .text-viev{
+.display .text-view{
     width: 230px;
     height: 50px;
     margin: 0px 0px 10px;
@@ -26,6 +26,22 @@
         width: 100%;
         height: 47px;
         font-size: 16px;
+    }
+    &.equal{
+
+        grid-column-start: 4;
+        grid-row-start: 4;
+        grid-row-end: 6;
+        input {
+            height: 94px;
+        }
+
+    }
+    &.zero{
+        width: 125px;
+        grid-column-start: 1;
+        grid-row-start: 5;
+        grid-column-end: 3;
     }
 
 }
